@@ -47,7 +47,7 @@ if [ "${RUN_CHOICE}" == "1" ]; then
   adduser "${TOPAZ_USER}" --gecos "Topaz Server" --disabled-password || exit
   echo
   if [[ ${GIT_VERSION} == "1" ]]; then
-    git clone --branch stable --recursive https://github.com/project-topaz/topaz/ /opt/topaz
+    git clone --branch release --recursive https://github.com/tsukasaroot/topaz/ /opt/topaz
   else
     git clone --recursive https://github.com/project-topaz/topaz/ /opt/topaz
   fi
